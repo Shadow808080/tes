@@ -325,7 +325,7 @@ def start(nomor,x): # Def Untuk Start Tools
         
 def main():
     os.system("cls") # Clear Terminal agar CMD berwarna
-    autoketik(f"Selamat datang di {merah}MySpam")
+    autoketik(f"Selamat datang di {merah}Pengiriman Waifu")
 
     # Contoh : 089508226367
     print(nomor := input(f"{hijau}Masukkan Nomor Target: {putih}")) # Walrus Operator untuk inputan Nomor Target
